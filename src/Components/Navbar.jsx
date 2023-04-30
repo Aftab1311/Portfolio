@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="header__content">
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
-            <img src={profile} alt="Logo Image" className="header__logo-img" />
+            <img src={profile} alt="Logo" className="header__logo-img" />
           </div>
           <span className="header__logo-sub">AFTAB AHMED</span>
         </div>
