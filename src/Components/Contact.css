@@ -1,0 +1,117 @@
+/* Contact section styles */
+
+.contact {
+    padding: 50px 0;
+    background-image: url("../img/background/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+  }
+  .main-container_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact__form-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
+    width: 600px;
+    background-color: #fff;
+    padding: 80px;
+    border-radius: 10px;
+  }
+  
+  .contact-form label {
+    color: black;
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: black;
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 180px;
+    width: 578px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    background-color: #ededed;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  .heading-sec__main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .heading-sec__sub {
+    display: flex;
+    font-family: "popins", sans-serif;
+    text-transform: initial;
+    text-align: center;
+    margin: 0px 200px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .about__title-line {
+    display: block;
+    margin: 0px 500px;
+    width: 210px;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #017FFE;
+    margin-bottom: 30px;
+  }
+  
+  
+  .contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  

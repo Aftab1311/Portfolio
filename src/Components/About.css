@@ -1,0 +1,115 @@
+.about {
+    background-color: #FBFAFB;
+    padding: 30px 0;
+  }
+  
+  .about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .heading-sec__main_about{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .about .heading-sec {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform:inherit;
+    text-align: center;
+    margin: 0px 200px;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .about__title-line_about {
+    display: block;
+    margin-left: 430px;
+    width: 250px;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #017FFE;
+    margin-bottom: 30px;
+  }
+  
+  .about__content-main {
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-right: 40px;
+  }
+  
+  .about__content-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left:200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .about__content-details {
+    margin-left: 200px;
+    margin-bottom: 30px;
+    font-family: "poppins", sans-serif;
+  }
+  .ctbtn{
+    margin: 0px 200px;
+  }
+  .about__content-details-para {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+.about__content-details-para a{
+    color: #017FFE;
+  font-weight: 700
+}
+  
+  .about__content-details-para strong {
+    font-weight: 700;
+    color:#555555
+  }
+
+  
+  .about__content-skills {
+    flex-basis: 35%;
+    max-width: 35%;
+    margin-top: 15px;
+    margin-right: 140px;
+  }
+ 
+   
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .about__content-skillsTitle{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .skills__skill {
+    background-color: #ededed;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .skills__skill:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
