@@ -1,117 +1,170 @@
-/* Contact section styles */
-
 .contact {
-    padding: 50px 0;
-    background-image: url("../img/background/bg2.jpg");
-    background-size: cover;
-    background-position: center;
-    color: black;
-  }
-  .main-container_contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .contact__form-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .contact-form {
-    width: 600px;
-    background-color: #fff;
-    padding: 80px;
-    border-radius: 10px;
-  }
-  
-  .contact-form label {
-    color: black;
-  }
-  
-  .contact-form .heading {
-    font-size: 24px;
-    color: black;
-    ;
-    margin-bottom: 12px;
-    font-weight: bold;
-    display: block;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form label {
-    margin-bottom: 10px;
-  }
-  
-  textarea {
-    resize: none;
-    height: 180px;
-    width: 578px;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    background-color: #ededed;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 5px #ff6384;
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-  }
-  .heading-sec__main{
-    display: flex;
-    justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-  }
-  .heading-sec__sub {
-    display: flex;
-    font-family: "popins", sans-serif;
-    text-transform: initial;
-    text-align: center;
-    margin: 0px 200px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }
+  padding: 3.125rem 0;
+  background-image: url("../img/background/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+.main-container_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.contact__form-container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.contact-form {
+  width: 37.5rem;
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 0.625rem;
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.625rem;
+}
+
+textarea {
+  resize: none;
+  height: 11.25rem;
+  width: 36.0625rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #ededed;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 0.3125rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0.3125rem #ff6384;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.heading-sec__main {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+  text-transform: capitalize;
+}
+
+.heading-sec__sub {
+  display: flex;
+  font-family: "popins", sans-serif;
+  text-transform: initial;
+  text-align: center;
+  margin: 0px 3.125rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.875rem;
+}
+
+.about__title-line {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 250px;
+  height: 4px;
+  border-radius: 30px;
+  background-color: #017FFE;
+  margin-bottom: 1.875rem;
+}
+
+@media (max-width: 576px) {
   .about__title-line {
-    display: block;
-    margin: 0px 500px;
-    width: 210px;
-    height: 4px;
-    border-radius: 30px;
-    background-color: #017FFE;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
   }
-  
-  
-  .contact-form button[type="submit"] {
-    background-color: #ff6384;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+}
+
+
+.contact-form button[type="submit"] {
+  background-color: #ff6384;
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    padding: 1.875rem;
   }
-  
-  .contact-form button[type="submit"]:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+
+  textarea {
+    width: 100%;
   }
-  
+
+  .main-container_contact {
+    padding: 2rem;
+  }
+
+  .contact__form-container {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 3.125rem;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .heading-sec__sub {
+    margin: 0;
+  }
+
+  .about__title-line {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 576px) {
+    .contact-form {
+      padding: 2rem;
+    }
+  }
+}

@@ -25,9 +25,8 @@
   font-size: 1.4rem;
   margin-bottom: 3rem;
   color: #000000;
-  padding: 0px 300px;
+  padding: 0px 18.75rem; /* Updated to use rem units */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 .btn--bg {
@@ -74,7 +73,7 @@
 .mouse {
   width: 1.5rem;
   height: 2.6rem;
-  border: 3px solid #000;
+  border: 0.1875rem solid #000; /* Updated to use rem units */
   border-radius: 1rem;
   position: relative;
   display: block;
@@ -97,109 +96,109 @@
 
 @keyframes scroll {
   0% {
-    transform: translate(-50%, 0.25rem);
+    transform: translate(-50%, 0.3125rem); /* Updated to use rem units */
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, 1.25rem);
+    transform: translate(-50%, 1.25rem); /* Updated to use rem units */
     opacity: 0;
   }
 }
 
 button,
 button::after {
- padding: 16px 20px;
- font-size: 18px;
- background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
- border: 0;
- color: #fff;
- letter-spacing: 3px;
- line-height: 1;
- box-shadow: 6px 0px 0px #00e6f6;
- outline: transparent;
- position: relative;
+  padding: 1rem 1.25rem; /* Updated to use rem units */
+  font-size: 1.125rem; /* Updated to use rem units */
+  background: linear-gradient(45deg, transparent 0.3125rem, #ff013c 0.3125rem); /* Updated to use rem units */
+  border: 0;
+  color: #fff;
+  letter-spacing: 0.1875rem; /* Updated to use rem units */
+  line-height: 1;
+  box-shadow: 0.375rem 0px 0px #00e6f6; /* Updated to use rem units */
+  outline: transparent;
+  position: relative;
 }
 
 button::after {
- --slice-0: inset(50% 50% 50% 50%);
- --slice-1: inset(80% -6px 0 0);
- --slice-2: inset(50% -6px 30% 0);
- --slice-3: inset(10% -6px 85% 0);
- --slice-4: inset(40% -6px 43% 0);
- --slice-5: inset(80% -6px 5% 0);
- content: "HOVER ME";
- display: block;
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
- text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
- clip-path: var(--slice-0);
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -0.375rem 0 0); /* Updated to use rem units */
+  --slice-2: inset(50% -0.375rem 1.875rem 0); /* Updated to use rem units */
+  --slice-3: inset(10% -0.375rem 5.625rem 0); /* Updated to use rem units */
+  --slice-4: inset(40% -0.375rem 2.625rem 0); /* Updated to use rem units */
+  --slice-5: inset(80% -0.375rem 0.3125rem 0); /* Updated to use rem units */
+  content: "HOVER ME";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 0.1875rem, #00e6f6 0.1875rem, #00e6f6 0.3125rem, #ff013c 0.3125rem); /* Updated to use rem units */
+  text-shadow: -0.1875rem -0.1875rem 0px #f8f005, 0.1875rem 0.1875rem 0px #00e6f6; /* Updated to use rem units */
+  clip-path: var(--slice-0);
 }
 
 button:hover::after {
- animation: 1s glitch;
- animation-timing-function: steps(2, end);
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
 }
 
 @keyframes glitch {
- 0% {
-  clip-path: var(--slice-1);
-  transform: translate(-20px, -10px);
- }
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-0.625rem, -0.3125rem); /* Updated to use rem units */
+  }
 
- 10% {
-  clip-path: var(--slice-3);
-  transform: translate(10px, 10px);
- }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(0.3125rem, 0.3125rem); /* Updated to use rem units */
+  }
 
- 20% {
-  clip-path: var(--slice-1);
-  transform: translate(-10px, 10px);
- }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-0.3125rem, 0.3125rem); /* Updated to use rem units */
+  }
 
- 30% {
-  clip-path: var(--slice-3);
-  transform: translate(0px, 5px);
- }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0, 0.15625rem); /* Updated to use rem units */
+  }
 
- 40% {
-  clip-path: var(--slice-2);
-  transform: translate(-5px, 0px);
- }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-0.15625rem, 0); /* Updated to use rem units */
+  }
 
- 50% {
-  clip-path: var(--slice-3);
-  transform: translate(5px, 0px);
- }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(0.15625rem, 0); /* Updated to use rem units */
+  }
 
- 60% {
-  clip-path: var(--slice-4);
-  transform: translate(5px, 10px);
- }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(0.15625rem, 0.3125rem); /* Updated to use rem units */
+  }
 
- 70% {
-  clip-path: var(--slice-2);
-  transform: translate(-10px, 10px);
- }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-0.3125rem, 0.3125rem); /* Updated to use rem units */
+  }
 
- 80% {
-  clip-path: var(--slice-5);
-  transform: translate(20px, -10px);
- }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(0.625rem, -0.3125rem); /* Updated to use rem units */
+  }
 
- 90% {
-  clip-path: var(--slice-1);
-  transform: translate(-10px, 0px);
- }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-0.3125rem, 0); /* Updated to use rem units */
+  }
 
- 100% {
-  clip-path: var(--slice-1);
-  transform: translate(0);
- }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
 }
